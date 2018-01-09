@@ -734,8 +734,8 @@ boost::filesystem::path static GetAutostartFilePath()
 {
     std::string chain = ChainNameFromCommandLine();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "dashcore.desktop";
-    return GetAutostartDir() / strprintf("dashcore-%s.lnk", chain);
+        return GetAutostartDir() / "notcoin.desktop";
+    return GetAutostartDir() / strprintf("notcoin-%s.lnk", chain);
 }
 
 bool GetStartOnSystemStartup()
