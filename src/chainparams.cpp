@@ -135,7 +135,7 @@ public:
         nDelayGetHeadersTime = 24 * 60 * 60;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1513908000, 2087222, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1513908000, 551065, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x00000d499c8d8953bcacbbb48f3f3da7c66d879ceea79a994f1e4d5e018b130f"));
         assert(genesis.hashMerkleRoot == uint256S("0xc2b0c6544e401840d86cdc699018798afc4eacd7722f36d553aea3ebfd5c841f"));
@@ -287,7 +287,7 @@ public:
             (    0, uint256S("00000a84da9fcae2834163881e040c559aa8d6731377e8fda156b3bb268a1d84")),
 
             1513908001, // * UNIX timestamp of last checkpoint block
-            0,       // * total number of transactions between genesis and last checkpoint
+            142273,       // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             2800         // * estimated number of transactions per day after checkpoint
         };
@@ -354,7 +354,7 @@ public:
         nDefaultPort = 18333;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1513908002, 2087222, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1513908002, 0, 0x207fffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
         assert(consensus.hashGenesisBlock == uint256S("0x000008ca1832a4baf228eb1553c03d3a2c8e02399550dd6ea8d65cec3ef23d2e"));
         assert(genesis.hashMerkleRoot == uint256S("0xe0028eb9648db56b1ac77cf090b99048a8007e2bb64b68f092c03c7f56a662c7"));
